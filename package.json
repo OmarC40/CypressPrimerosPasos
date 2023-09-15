@@ -1,0 +1,22 @@
+{
+  "name": "demo-cypress",
+  "version": "1.0.0",
+  "description": "Proyecto de pruebas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tests": "cypress open",
+    "pruebas-edge": "cypress run --spec cypress/e2e/smoketestbanco.cy.js --browser edge",
+    "pruebal-edge": "cypress run --spec cypress/e2e/smoketestbancocopia.cy.js --browser edge",
+    "pruebal-chrome": "cypress run --spec cypress/e2e/smoketestbancocopia.cy.js --browser chrome",
+    "pruebal-firefox": "cypress run --spec cypress/e2e/smoketestbancocopia.cy.js --browser firefox"
+  },
+  "author": "Omar Cuarenta Obrajero",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^4.2.0"
+  },
+  "devDependencies": {
+    "cypress-xpath": "^2.0.1"
+  }
+}

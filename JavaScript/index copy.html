@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de evento load</title>
+</head>
+<body>
+  <h1>Evento Load</h1>
+  <img id="miImagen" src="imagen.jpg" alt="Mi imagen">
+  
+  <script>
+    // Agregar un listener para el evento load en la ventana
+    window.addEventListener("load", function() {
+      console.log("La página ha sido completamente cargada.");
+      
+      // Acceder a la imagen y cambiar su atributo alt
+      const imagen = document.getElementById("miImagen");
+      imagen.alt = "Imagen cargada";
+    });
+  </script>
+</body>
+</html>
