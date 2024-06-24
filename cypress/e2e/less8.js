@@ -1,7 +1,5 @@
 //declare function
 
-const { sum } = require("cypress/types/lodash");
-
 helloOne();
 /*hellowtwo(); Para usar una funcion anonima esta se tiene que usar despues de que 
 fue declarada ya que si lo hacemos antes esta simplemente no puede ser usada en cambio
@@ -30,16 +28,29 @@ hellothree();
 
 //function with arguments
 
-/*function printname(name) {
+function printname(name) {
     console.log("Hola "+name+" que tengas bonito inicio de semana")
     
 }
 printname("omar");
-/*
+
 function suma(a,b) {
     var resultado=a+b;
     return resultado
 }
 
 var mysum=suma(2,3);
-console.log(mysum)*/
+console.log(mysum)
+    
+import { suma2,resta } from "../e2e/misc/math.js";
+
+var mysum=suma2(2,3);
+console.log(mysum)
+
+var myres=resta(2,3);
+console.log(myres)
+
+import * as misc from "../e2e/misc/math.js";
+
+var myres2=misc.resta(2,7);
+console.log(myres2)
